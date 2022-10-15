@@ -1,0 +1,12 @@
+
+head
+  meta(charset='UTF-8')
+  title Shark image
+  link(rel='stylesheet' href='node_modules/xterm/dist/xterm.css')
+  script(src='node_modules/xterm/dist/xterm.js')
+#terminal
+script(type='text/javascript').
+  var term = new Terminal();
+  term.open(document.getElementById('terminal'));
+  term.writeln('Hello World!');
+            
